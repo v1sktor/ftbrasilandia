@@ -29,7 +29,7 @@ export function BackButton({ className, variant = "default", label = "Voltar" }:
       className={cn(
         "gap-1",
         variant === "light" &&
-          "text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground",
+          "text-sidebar-foreground hover:bg-sidebar-accent hover:text-sidebar-foreground",
         className,
       )}
     >

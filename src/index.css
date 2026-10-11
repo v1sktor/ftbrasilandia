@@ -6,59 +6,60 @@
 
 @layer base {
   :root {
-    /* Força Tática PMESP — preto, grafite, vermelho institucional */
-    --background: 0 0% 96%;
-    --foreground: 0 0% 7%;
+    color-scheme: dark;
+    /* CAEP Sudeste — Ações Especiais: preto, grafite, cinza, branco + amarelo do brasão */
+    --background: 0 0% 5%;
+    --foreground: 0 0% 94%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 7%;
+    --card: 0 0% 9%;
+    --card-foreground: 0 0% 94%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 7%;
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 94%;
 
-    --primary: 352 73% 37%;
-    --primary-foreground: 0 0% 100%;
-    --primary-glow: 352 72% 47%;
+    --primary: 64 88% 58%;
+    --primary-foreground: 0 0% 5%;
+    --primary-glow: 64 90% 68%;
 
-    --secondary: 0 0% 91%;
-    --secondary-foreground: 0 0% 10%;
+    --secondary: 0 0% 14%;
+    --secondary-foreground: 0 0% 92%;
 
-    --muted: 0 0% 91%;
-    --muted-foreground: 0 0% 38%;
+    --muted: 0 0% 13%;
+    --muted-foreground: 0 0% 62%;
 
-    --accent: 0 0% 17%;
-    --accent-foreground: 0 0% 95%;
+    --accent: 0 0% 12%;
+    --accent-foreground: 0 0% 94%;
 
-    --destructive: 0 70% 45%;
+    --destructive: 0 68% 48%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 82%;
-    --input: 0 0% 88%;
-    --ring: 352 73% 37%;
+    --border: 0 0% 20%;
+    --input: 0 0% 16%;
+    --ring: 64 88% 58%;
 
     --radius: 0.25rem;
 
-    --sidebar-background: 0 0% 7%;
-    --sidebar-foreground: 0 0% 91%;
-    --sidebar-primary: 352 73% 45%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 0 0% 17%;
+    --sidebar-background: 0 0% 3%;
+    --sidebar-foreground: 0 0% 88%;
+    --sidebar-primary: 64 88% 58%;
+    --sidebar-primary-foreground: 0 0% 5%;
+    --sidebar-accent: 0 0% 12%;
     --sidebar-accent-foreground: 0 0% 100%;
-    --sidebar-border: 0 0% 23%;
-    --sidebar-ring: 352 73% 45%;
+    --sidebar-border: 0 0% 17%;
+    --sidebar-ring: 64 88% 58%;
 
-    --success: 142 45% 38%;
-    --warning: 38 80% 45%;
-    --danger: 0 65% 48%;
+    --success: 142 50% 45%;
+    --warning: 38 85% 55%;
+    --danger: 0 68% 52%;
 
-    --gradient-tactical: linear-gradient(135deg, hsl(0 0% 96%) 0%, hsl(0 0% 89%) 100%);
-    --gradient-gold: linear-gradient(135deg, hsl(352 73% 37%) 0%, hsl(352 72% 47%) 100%);
-    --gradient-blue: linear-gradient(135deg, hsl(0 0% 17%) 0%, hsl(0 0% 7%) 100%);
-    --gradient-hero: linear-gradient(180deg, hsl(0 0% 96%) 0%, hsl(0 0% 90%) 100%);
+    --gradient-tactical: linear-gradient(135deg, hsl(0 0% 7%) 0%, hsl(0 0% 4%) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(64 88% 52%) 0%, hsl(64 90% 64%) 100%);
+    --gradient-blue: linear-gradient(135deg, hsl(0 0% 11%) 0%, hsl(0 0% 3%) 100%);
+    --gradient-hero: radial-gradient(ellipse at 70% 0%, hsl(0 0% 11%) 0%, hsl(0 0% 5%) 60%);
 
-    --shadow-gold: 0 8px 28px -12px hsl(352 73% 37% / 0.3);
-    --shadow-tactical: 0 10px 30px -14px hsl(0 0% 0% / 0.28);
-    --shadow-elevated: 0 20px 50px -24px hsl(0 0% 0% / 0.48);
+    --shadow-gold: 0 8px 28px -12px hsl(64 88% 58% / 0.28);
+    --shadow-tactical: 0 10px 30px -14px hsl(0 0% 0% / 0.7);
+    --shadow-elevated: 0 20px 50px -24px hsl(0 0% 0% / 0.9);
 
 
     --transition-smooth: cubic-bezier(0.4, 0, 0.2, 1);
@@ -109,8 +110,8 @@
   .bg-hazard-stripes {
     background-image: repeating-linear-gradient(
       45deg,
-      hsl(0 0% 88%) 0,
-      hsl(0 0% 88%) 12px,
+      hsl(64 88% 58%) 0,
+      hsl(64 88% 58%) 12px,
       hsl(0 0% 5%) 12px,
       hsl(0 0% 5%) 24px
     );

@@ -2,10 +2,9 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Network, ScrollText, Settings, Megaphone, FileText, ChevronRight, ShieldAlert, Siren, LogIn } from "lucide-react";
-import heroBanner from "@/assets/forca-tatica-hero.jpg";
 import { supabase } from "@/integrations/supabase/client";
-const logoUrl = "/__l5e/assets-v1/9be673cc-c46a-43d3-8043-abca159df6fa/logo-forca-tatica.png";
-// logo asset replaced by CDN pointer
+const logoUrl = "/logo-caep.png";
+
 
 const Index = () => {
   const now = new Date();
@@ -29,17 +28,17 @@ const Index = () => {
           <Link to="/" className="flex items-center gap-3">
             <img
               src={logoUrl}
-              alt="Emblema da Força Tática"
+              alt="Brasão do CAEP Sudeste"
               width={1024}
               height={1024}
               className="h-14 w-14 object-contain"
             />
             <span className="flex flex-col leading-tight">
               <span className="font-display text-lg uppercase">
-                Força Tática
+                CAEP Sudeste
               </span>
               <span className="text-[11px] uppercase text-sidebar-foreground/65">
-                Polícia Militar do Estado de São Paulo
+                Ações Especiais · Salve
               </span>
             </span>
           </Link>
@@ -64,13 +63,13 @@ const Index = () => {
           <div className="relative z-10 flex flex-col justify-center px-6 py-12 sm:px-10 lg:py-16 bg-sidebar text-sidebar-foreground">
             <div className="mb-5 flex items-center gap-3 text-primary">
               <span className="h-px w-12 bg-primary" />
-              <span className="font-semibold text-xs uppercase">Patrulhamento tático</span>
+              <span className="font-semibold text-xs uppercase">Ações Especiais</span>
             </div>
             <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl uppercase leading-tight text-sidebar-foreground">
-              Força Tática
+              CAEP Sudeste
             </h1>
             <p className="mt-3 font-display text-lg uppercase text-sidebar-foreground/75">
-              Polícia Militar do Estado de São Paulo
+              Ações Especiais · Salve
             </p>
             <p className="mt-6 max-w-lg text-[15px] leading-relaxed text-sidebar-foreground/65">
               Portal operacional para registros, comunicações institucionais e serviços de apoio ao efetivo.
@@ -85,21 +84,23 @@ const Index = () => {
                 <Link to="/rso/novo">Relatório de Diligências</Link>
               </Button>
               <Button asChild size="lg" variant="ghost" className="w-full font-semibold uppercase text-sidebar-foreground hover:bg-sidebar-accent hover:text-sidebar-foreground sm:col-span-2">
-                <Link to="/edital">Edital Força Tática</Link>
+                <Link to="/edital">Edital CAEP Sudeste</Link>
               </Button>
             </div>
           </div>
-          <div className="relative min-h-[340px] lg:min-h-full overflow-hidden">
-            <img
-              src={heroBanner}
-              alt="Equipe e viaturas da Força Tática em prontidão"
-              width={1600}
-              height={900}
-              className="absolute inset-0 h-full w-full object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-r from-sidebar/50 via-transparent to-transparent" />
+          <div className="relative min-h-[340px] lg:min-h-full overflow-hidden bg-gradient-hero">
+            <div className="absolute inset-0 bg-tactical-grid opacity-30" />
+            <div className="absolute inset-0 flex items-center justify-center p-8">
+              <img
+                src={logoUrl}
+                alt="Brasão do CAEP Sudeste — Ações Especiais"
+                width={406}
+                height={492}
+                className="max-h-[420px] w-auto object-contain drop-shadow-[0_0_40px_hsl(var(--primary)/0.18)]"
+              />
+            </div>
             <div className="absolute bottom-5 right-5 flex items-center gap-2 bg-sidebar/90 px-4 py-2 text-xs font-semibold uppercase text-sidebar-foreground border-l-4 border-primary">
-              <Siren className="h-4 w-4 text-primary" /> Operacional
+              <Siren className="h-4 w-4 text-primary" /> Fidelis Militia
             </div>
           </div>
         </div>
@@ -205,7 +206,7 @@ const Index = () => {
       {/* Rodapé */}
       <footer className="bg-sidebar text-sidebar-foreground mt-auto border-t-2 border-primary">
         <div className="max-w-6xl mx-auto px-6 py-5 flex flex-col sm:flex-row items-center justify-between gap-2 text-[12px]">
-          <span>© Força Tática PMESP — {now.getFullYear()}</span>
+          <span>© CAEP Sudeste — {now.getFullYear()}</span>
           <span className="text-sidebar-foreground/65">Portal operacional · Acesso restrito</span>
         </div>
       </footer>

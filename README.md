@@ -1,4 +1,6 @@
-# Welcome to your Lovable project
+# CAEP Sudeste — Ações Especiais
+
+Portal institucional e operacional do CAEP Sudeste, cidade de Salve.
 
 ## Project info
 

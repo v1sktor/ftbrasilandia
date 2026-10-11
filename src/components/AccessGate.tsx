@@ -6,8 +6,8 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-const logoUrl = "/__l5e/assets-v1/9be673cc-c46a-43d3-8043-abca159df6fa/logo-forca-tatica.png";
-// logo asset replaced by CDN pointer
+const logoUrl = "/logo-caep.png";
+
 
 const storageKey = (chave: string) => `access-code:${chave}`;
 
@@ -89,7 +89,7 @@ export function AccessGate({
     <div className="min-h-screen bg-background flex items-center justify-center px-6 py-12">
       <Card className="w-full max-w-md">
         <CardHeader className="items-center text-center space-y-3">
-          <img src={logoUrl} alt="Emblema da Força Tática" width={1024} height={1024} className="h-16 w-16 object-contain" />
+          <img src={logoUrl} alt="Brasão do CAEP Sudeste" width={1024} height={1024} className="h-16 w-16 object-contain" />
           <CardTitle className="text-lg">{titulo}</CardTitle>
           <p className="text-sm text-muted-foreground">
             Área restrita. Informe o código de acesso semanal fornecido pelo comando.

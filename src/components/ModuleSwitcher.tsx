@@ -33,7 +33,7 @@ export function ModuleSwitcher({ variant = "default" }: { variant?: "default" | 
           size="sm"
           className={
             variant === "light"
-              ? "border-primary-foreground/30 bg-primary-foreground/10 text-primary-foreground hover:bg-primary-foreground/20 hover:text-primary-foreground"
+              ? "border-sidebar-border bg-sidebar-accent text-sidebar-foreground hover:bg-secondary hover:text-sidebar-foreground"
               : ""
           }
         >

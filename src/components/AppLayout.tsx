@@ -4,8 +4,8 @@ import { Outlet } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { BackButton } from "@/components/BackButton";
 import { ModuleSwitcher } from "@/components/ModuleSwitcher";
-const logoUrl = "/__l5e/assets-v1/9be673cc-c46a-43d3-8043-abca159df6fa/logo-forca-tatica.png";
-// logo asset replaced by CDN pointer
+const logoUrl = "/logo-caep.png";
+
 
 export function AppLayout() {
   return (
@@ -13,15 +13,15 @@ export function AppLayout() {
       <div className="min-h-screen flex w-full bg-secondary/40">
         <AppSidebar />
         <div className="flex-1 flex flex-col min-w-0">
-          <header className="h-16 flex items-center gap-4 px-4 bg-gradient-blue text-primary-foreground shadow-tactical border-b-2 border-primary">
-            <SidebarTrigger className="text-primary-foreground hover:bg-primary-foreground/10" />
+          <header className="h-16 flex items-center gap-4 px-4 bg-sidebar text-sidebar-foreground shadow-tactical border-b-2 border-primary">
+            <SidebarTrigger className="text-sidebar-foreground hover:bg-sidebar-accent" />
             <Link to="/" className="flex items-center gap-3 min-w-0">
-              <img src={logoUrl} alt="Emblema da Força Tática" width={1024} height={1024} className="h-11 w-11 object-contain" />
+              <img src={logoUrl} alt="Brasão do CAEP Sudeste" width={1024} height={1024} className="h-11 w-11 object-contain" />
               <div className="leading-tight min-w-0">
                 <span className="block font-display text-sm md:text-base font-semibold uppercase tracking-wider truncate">
-                  Força Tática · PMESP
+                  CAEP Sudeste
                 </span>
-                <span className="block text-[11px] uppercase tracking-[0.2em] text-primary-foreground/70">
+                <span className="block text-[11px] uppercase tracking-[0.2em] text-sidebar-foreground/65">
                   Comando operacional
                 </span>
               </div>
