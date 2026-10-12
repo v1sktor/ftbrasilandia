@@ -45,7 +45,7 @@ const Index = () => {
 
           <nav className="hidden lg:flex items-center gap-6 text-[13px] font-semibold uppercase">
             <TopLink to="/" label="Início" />
-            <TopLink to="/ccomsoc" label="Comunicação" />
+            <TopLink to="/ccomsoc" label="CCOMSOC" />
             <TopLink to="/ctb" label="Código Penal" />
             <TopLink to="/institucional" label="Institucional" />
             <TopLink to="/cursos" label="Cursos" />
@@ -77,28 +77,27 @@ const Index = () => {
             <div className="mt-8 grid w-full max-w-lg grid-cols-1 gap-3 sm:grid-cols-2">
               <Button asChild size="lg" className="w-full font-semibold uppercase">
                 <Link to="/bopc">
-                  BOPC/BIC <ChevronRight className="ml-1 h-4 w-4" />
+                  BOPM <ChevronRight className="ml-1 h-4 w-4" />
                 </Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="w-full font-semibold uppercase border-sidebar-border bg-sidebar-accent text-sidebar-accent-foreground hover:bg-secondary hover:text-secondary-foreground">
-                <Link to="/rso/novo">Relatório de Diligências</Link>
+                <Link to="/rso/novo">RSO</Link>
               </Button>
               <Button asChild size="lg" variant="ghost" className="w-full font-semibold uppercase text-sidebar-foreground hover:bg-sidebar-accent hover:text-sidebar-foreground sm:col-span-2">
                 <Link to="/edital">Edital CAEP Sudeste</Link>
               </Button>
             </div>
           </div>
-          <div className="relative min-h-[340px] lg:min-h-full overflow-hidden bg-gradient-hero">
-            <div className="absolute inset-0 bg-tactical-grid opacity-30" />
-            <div className="absolute inset-0 flex items-center justify-center p-8">
-              <img
-                src={logoUrl}
-                alt="Brasão do CAEP Sudeste — Ações Especiais"
-                width={406}
-                height={492}
-                className="max-h-[420px] w-auto object-contain drop-shadow-[0_0_40px_hsl(var(--primary)/0.18)]"
-              />
-            </div>
+          <div className="relative min-h-[340px] lg:min-h-full overflow-hidden">
+            <img
+              src="/hero-caep.jpg"
+              alt="Efetivo do CAEP Sudeste em formação"
+              width={701}
+              height={438}
+              className="absolute inset-0 h-full w-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-sidebar via-sidebar/30 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-sidebar/70 via-transparent to-transparent" />
             <div className="absolute bottom-5 right-5 flex items-center gap-2 bg-sidebar/90 px-4 py-2 text-xs font-semibold uppercase text-sidebar-foreground border-l-4 border-primary">
               <Siren className="h-4 w-4 text-primary" /> Fidelis Militia
             </div>
@@ -138,8 +137,8 @@ const Index = () => {
         </div>
         <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           <ServiceCard to="/hierarquia" icon={Network} title="Hierarquia" desc="Estrutura de comando e efetivo das unidades." />
-          <ServiceCard to="/rso/novo" icon={FileText} title="RSO" desc="Registro de serviço e diligências operacionais." />
-          <ServiceCard to="/ccomsoc" icon={Megaphone} title="Comunicação" desc="Notícias, comunicados e releases oficiais." />
+          <ServiceCard to="/rso/novo" icon={FileText} title="RSO" desc="Registro de serviço operacional." />
+          <ServiceCard to="/ccomsoc" icon={Megaphone} title="CCOMSOC" desc="Notícias, comunicados e releases oficiais." />
           <ServiceCard to="/diretrizes" icon={ScrollText} title="Diretrizes" desc="Manuais internos, normas e procedimentos." />
         </div>
       </section>

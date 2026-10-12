@@ -112,7 +112,7 @@ const Denuncia = () => {
           </span>
           <div>
             <h1 className="font-display text-2xl font-bold text-primary">
-              Faça uma denúncia — Corregedoria da Polícia Civil
+              Faça uma denúncia — Corregedoria da PMESP
             </h1>
             <p className="mt-2 text-[14px] leading-relaxed text-muted-foreground">
               Canal direto com a CORREGEPOL para comunicar desvios de conduta, abuso de autoridade

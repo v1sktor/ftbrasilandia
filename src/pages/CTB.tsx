@@ -208,7 +208,7 @@ export default function CTB() {
       {/* Footer */}
       <footer className="relative z-10 border-t border-border/60 backdrop-blur-md bg-background/60">
         <div className="px-6 lg:px-10 py-5 text-center font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
-          Código Penal · Trânsito · Polícia Civil SP
+          Código Penal · Trânsito · PMESP
         </div>
       </footer>
     </div>

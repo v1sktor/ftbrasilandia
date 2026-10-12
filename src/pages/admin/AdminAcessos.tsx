@@ -12,8 +12,8 @@ import CorregedoriaContas from "@/components/admin/CorregedoriaContas";
 type Codigo = { id: string; chave: string; codigo: string; updated_at: string };
 
 const LABELS: Record<string, string> = {
-  bopc: "BOPC / BIC",
-  diligencias: "Relatório de Diligências",
+  bopc: "BOPM",
+  diligencias: "RSO",
   juridico: "Jurídico",
   corregedoria: "Corregedoria",
 };

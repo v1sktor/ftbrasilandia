@@ -75,7 +75,7 @@ const App = () => (
               <Route
                 path="/rso/novo"
                 element={
-                  <AccessGate chave="diligencias" titulo="Relatório de Diligências">
+                  <AccessGate chave="diligencias" titulo="RSO">
                     <RsoNovo />
                   </AccessGate>
                 }
@@ -90,7 +90,7 @@ const App = () => (
             <Route
               path="/bopc"
               element={
-                <AccessGate chave="bopc" titulo="BOPC / BIC">
+                <AccessGate chave="bopc" titulo="BOPM">
                   <BOPC />
                 </AccessGate>
               }
@@ -124,7 +124,7 @@ const App = () => (
                 <Route
                   path="/relatorios"
                   element={
-                    <AccessGate chave="diligencias" titulo="Relatório de Diligências">
+                    <AccessGate chave="diligencias" titulo="RSO">
                       <Relatorios />
                     </AccessGate>
                   }

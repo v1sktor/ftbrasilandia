@@ -8,18 +8,18 @@ export interface ProvaQuestao {
 export const QUESTOES_PARTE_1: ProvaQuestao[] = [
   {
     n: 1,
-    enunciado: "Qual é a principal função da Polícia Civil?",
+    enunciado: "Qual é a principal função da PMESP?",
     opcoes: [
-      "Fazer patrulhamento ostensivo",
-      "Investigar crimes e conduzir inquéritos",
+      "Fazer o policiamento ostensivo e preservar a ordem pública",
+      "Conduzir inquéritos policiais",
       "Aplicar multas de trânsito",
       "Controlar hospitais",
     ],
-    correta: 1,
+    correta: 0,
   },
   {
     n: 2,
-    enunciado: "O que um Delegado deve fazer ao chegar em uma cena de homicídio?",
+    enunciado: "O que um Oficial deve fazer ao chegar em uma cena de homicídio?",
     opcoes: [
       "Liberar imediatamente o local",
       "Isolar a área e iniciar os procedimentos investigativos",
@@ -30,7 +30,7 @@ export const QUESTOES_PARTE_1: ProvaQuestao[] = [
   },
   {
     n: 3,
-    enunciado: "Em quais situações a Polícia Civil pode solicitar mandado de busca e apreensão?",
+    enunciado: "Em quais situações é possível realizar busca e apreensão?",
     opcoes: [
       "Em qualquer abordagem de rotina",
       "Apenas em acidentes de trânsito",
@@ -52,12 +52,12 @@ export const QUESTOES_PARTE_1: ProvaQuestao[] = [
   },
   {
     n: 5,
-    enunciado: "Qual a diferença entre Polícia Civil e Polícia Militar?",
+    enunciado: "Qual a atribuição constitucional da PMESP?",
     opcoes: [
-      "Nenhuma diferença",
-      "A Civil investiga e a Militar faz policiamento ostensivo",
-      "A Militar investiga homicídios",
-      "A Civil controla o trânsito exclusivamente",
+      "Nenhuma atribuição específica",
+      "Policiamento ostensivo e preservação da ordem pública",
+      "Investigar homicídios",
+      "Controlar o trânsito exclusivamente",
     ],
     correta: 1,
   },
@@ -74,7 +74,7 @@ export const QUESTOES_PARTE_1: ProvaQuestao[] = [
   },
   {
     n: 7,
-    enunciado: "Como um Investigador deve agir ao coletar provas?",
+    enunciado: "Como um policial militar deve agir ao coletar provas?",
     opcoes: [
       "Mexendo em tudo rapidamente",
       "Preservando o local e registrando as evidências",
@@ -112,7 +112,7 @@ export const QUESTOES_PARTE_1: ProvaQuestao[] = [
       "Qualquer pessoa pode manipular as provas",
       "As provas devem ser preservadas e registradas corretamente",
       "As provas podem ser destruídas após apreensão",
-      "Apenas Delegados podem tocar nas provas",
+      "Apenas Oficiais podem tocar nas provas",
     ],
     correta: 1,
   },
@@ -154,10 +154,10 @@ export const QUESTOES_PARTE_2: ProvaQuestao[] = [
   },
   {
     n: 14,
-    enunciado: "Quais são os principais departamentos especializados da Polícia Civil?",
+    enunciado: "Quais são algumas unidades especializadas da PMESP?",
     opcoes: [
       "Corpo de Bombeiros e SAMU",
-      "DEIC, DECAP E DOPE",
+      "ROTA, BAEP e Batalhão de Choque",
       "CET e DETRAN",
       "Guarda Municipal e Exército",
     ],
@@ -165,7 +165,7 @@ export const QUESTOES_PARTE_2: ProvaQuestao[] = [
   },
   {
     n: 15,
-    enunciado: "Qual deve ser a postura de um Escrivão durante depoimentos?",
+    enunciado: "Qual deve ser a postura de um policial militar durante depoimentos?",
     opcoes: [
       "Alterar informações",
       "Registrar tudo de forma imparcial e correta",
@@ -176,12 +176,12 @@ export const QUESTOES_PARTE_2: ProvaQuestao[] = [
   },
   {
     n: 16,
-    enunciado: "Como funciona uma operação conjunta entre Civil e Militar?",
+    enunciado: "Como funciona uma operação conjunta entre unidades da PMESP?",
     opcoes: [
       "Cada equipe age por si só, sem comunicação",
       "Atuam de forma coordenada em objetivos específicos",
-      "A Militar realiza e a Civil monitora",
-      "Apenas a Civil pode agir armada",
+      "Uma unidade realiza e as demais apenas observam",
+      "Apenas uma unidade pode agir armada",
     ],
     correta: 1,
   },
@@ -259,7 +259,7 @@ export const QUESTOES_DISSERTATIVAS = [
   {
     n: 23,
     enunciado:
-      "Descreva ao seu ver, o motivo pelo o qual você faria diferença na Polícia Civil:",
+      "Descreva ao seu ver, o motivo pelo o qual você faria diferença na PMESP:",
   },
   {
     n: 24,
